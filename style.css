@@ -1,0 +1,680 @@
+/* common styles */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Mazda Type Regular", 'sans-serif';
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* end of common styles */
+
+/* start of navbar */
+.navbar-main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1/-1;
+    height: 10rem;
+    background-color: #101010;
+    padding: 2rem 0;
+}
+
+#navbar-container {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-image {
+    width: 30%;
+    align-content: center;
+}
+
+.mazda-logo {
+    /* justify-self: center; */
+    width: 6rem;
+    height: 6rem;
+}
+
+.text-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.text-icon p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.navbar-status {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.text-icon p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 100;
+}
+
+.navbar-status-two>p {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.navbar-status-one {
+    display: flex;
+    flex-direction: row;
+    color: rgb(213, 213, 213);
+    justify-content: end;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navbar-status-two {
+    display: flex;
+    flex-direction: row;
+    color: rgb(213, 213, 213);
+    justify-content: end;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-icons {
+    color: rgb(213, 213, 213);
+    stroke: rgb(213, 213, 213);
+    stroke-width: .2rem;
+    width: 1.5rem;
+
+}
+
+.nav-icon3 {
+    color: rgb(213, 213, 213);
+    fill: rgb(213, 213, 213);
+    width: 1.5rem;
+    /* stroke-width: .09rem; */
+}
+
+.nav-icon2 {
+    fill: white;
+}
+
+.nav-icon-big {
+    color: rgb(16, 16, 16);
+    fill: rgb(213, 213, 213);
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+/* end of navbar */
+
+/* start of video container */
+
+.video-container {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: .2rem 0rem;
+    grid-column-gap: .2rem;
+    grid-row-gap: .2rem;
+    height: 90vh;
+}
+
+.video-cx60 {
+    position: relative;
+    grid-column: 1/8;
+    grid-row: 1/-1;
+    background-image: url(./images/fullscreen/videos-homepage/mazdacx60-hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-cx30 {
+    position: relative;
+    grid-column: 8/-1;
+    grid-row: 1/7;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/fullscreen/videos-homepage/cx5-hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-cx5 {
+    position: relative;
+    grid-column: 8/-1;
+    grid-row: 7/-1;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/fullscreen/videos-homepage/cx30-hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-content {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-content p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.video-content-car-name {
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+}
+
+.video-content-car-offerdetails {
+    letter-spacing: .4rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-top: 1rem;
+}
+
+.video-content-car-offerdetails2 {
+    letter-spacing: .4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+
+}
+
+.video-content-car-link {
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-underline-offset: .6rem;
+    padding-top: 2.5rem;
+}
+
+/* end of video container */
+
+/* start of mazda cars */
+.mazda-cars {
+    grid-column: 1/-1;
+    background-color: rgb(245, 245, 245);
+    color: #101010;
+    padding: 4rem 0;
+}
+
+.mazda-cars-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mazda-cars-heading {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    padding-bottom: 2rem;
+}
+
+.mazda-cars-categories {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mazda-cars-categories>div {
+    padding: 1rem 2rem;
+    border: .1rem solid rgb(16, 16, 16);
+    background-color: white;
+    border-radius: 9rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.mazda-cars-categories>div:hover {
+    background-color: rgb(145, 10, 45);
+    color: white;
+}
+
+.mazda-cars-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.mazda-cars-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.mazda-car-name {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.mazda-car-type {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.mazda-car-features {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    padding: .2rem;
+}
+
+.mazda-car-feature {
+    display: flex;
+    align-items: center;
+}
+
+.mazda-car-feature img {
+    padding-right: .8rem;
+}
+
+.feature-text {
+    font-size: 1.2rem;
+}
+
+.mazda-car-button {
+    padding: 1.2rem 1rem;
+    border: .1rem solid rgb(16, 16, 16);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 15rem;
+    border-radius: .3rem;
+    margin: 0 auto;
+}
+
+.mazda-car-button:hover {
+    background-color: rgb(145, 10, 45);
+    color: white;
+}
+
+/* end of mazda cars */
+
+/* start of terms */
+.terms-hero {
+    grid-column: 1/-1;
+    padding: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(16, 16, 16);
+}
+
+/* end of terms hero */
+
+/* start of options */
+.options {
+    grid-column: 2/12;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8rem 0;
+    box-sizing: border-box;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem 5rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: .1rem solid rgb(245, 245, 245);
+}
+
+.option:hover {
+    border-color: rgb(16, 16, 16);
+}
+
+.option>p {
+    padding-top: .3rem;
+    margin-top: 0;
+}
+
+.option-image-element {
+    width: 6rem;
+    height: 6rem;
+}
+
+/* end of options */
+
+/* start of engineering information */
+
+.engineering {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    color: rgb(16, 16, 16);
+}
+
+.engineering-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem 0;
+    line-height: 3rem;
+}
+
+.engineering-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    justify-content: center;
+
+    /* align-items: center; */
+}
+
+.image {
+    text-align: center;
+}
+
+.ec2 {
+    padding-left: 10rem;
+}
+
+.ec1 {
+    padding-right: 10rem;
+}
+
+.ec1>p:first-child,
+.ec2>p:first-child {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.image>img {
+    width: 58rem;
+    height: 42rem;
+}
+
+.engineering-heading {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    line-height: 4rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.content-underline {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: .2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+}
+
+/* end of engineering information */
+
+
+/* start of mazda flex items */
+/* .aboutus-card-container {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+} */
+
+.aboutus-cards {
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem 0rem;
+    /* height: 100%; */
+    margin-bottom: 8rem;
+
+}
+
+.aboutus-image1 {
+    height: 38rem;
+    width: 38rem;
+    background-image: url(./images/fullscreen/flex1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutus-image2 {
+    height: 38rem;
+    width: 38rem;
+    background-image: url(./images/fullscreen/flex2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutus-image3 {
+    height: 38rem;
+    width: 38rem;
+    background-image: url(./images/fullscreen/flex3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-us-cardinfo-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem;
+}
+
+.about-us-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+
+.about-us-paragraph {
+    font-size: 1.6rem;
+    color: rgb(16, 16, 16);
+    line-height: 2.3rem;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+.aboutus-card-info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    padding: 0rem;
+    color: rgb(16, 16, 16);
+}
+
+.about-us-link {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-underline-offset: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* end of mazda flex items */
+
+/* terms and conditions */
+.terms-conditions {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: rgb(245, 245, 245);
+}
+
+.terms-conditions-content {
+    grid-column: 2/12;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-conditions-content>p {
+    text-align: justify;
+    font-size: 1.6rem;
+    color: rgb(16, 16, 16);
+}
+
+.terms-bold {
+    font-weight: bold;
+}
+
+/* end of terms and conditions */
+
+
+/* start of footer  */
+
+.footer-main {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #101010;
+}
+
+#footer-container {
+    color: #d5d5d5;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 6rem 0;
+    gap: 2rem;
+    letter-spacing: .1rem;
+}
+
+.footer-slot {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.footer-content>p:first-child {
+    border-bottom: .1rem solid rgb(213, 213, 213);
+    padding-bottom: 1.5rem;
+}
+
+.social-icons {
+    width: 2rem;
+    height: 2rem;
+    fill: rgb(213, 213, 213);
+    padding-right: 1rem;
+}
+
+.icon-set:hover,
+.icon-set~p:hover {
+    color: white;
+}
+
+.social-icons:hover {
+    fill: white;
+}
+
+.icon-set {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    grid-column: 2/12;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-slot-1 {
+    width: 100%;
+    background-color: #101010;
+    justify-items: center;
+    display: flex;
+}
+
+.footer-slot-2 {
+    border-top: .1rem solid rgb(213, 213, 213);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 1.4rem;
+    gap: 2rem;
+    color: #d5d5d5;
+    padding: 2rem 0;
+}
+
+.footer-slot-3 {
+    color: #d5d5d5;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width: 20%;
+    justify-items: center;
+
+}
+
+.footer-slot-4 {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    gap: 2rem;
+    color: #d5d5d5;
+    padding: 0rem 0;
+}
+
+.icon-set>p {
+    padding-right: 1.2rem;
+}
+
+/* end of footer */
